@@ -4,7 +4,7 @@ This repository contains a collection of data engineering projects, showcasing m
 
 ## Projects
 
-### Project 1: [Automated Daily Report Updater for Google Sheets with Gmail API, Google Sheets API, and Selenium](link-to-project)
+### Project 1: [Automated Daily Report Updater for Google Sheets with Gmail API, Google Sheets API, and Selenium](https://github.com/jedsk/date-engineering-portfolio/blob/main/portfolio.ipynb)
 
 - **Summary:**
   - This data project automates the process of updating daily reports in Google Sheets using Selenium, Google Sheets API, Gmail API, and pandas for data transformation. The project consists of multiple functions handling specific tasks.
