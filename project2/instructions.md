@@ -1,4 +1,4 @@
-## BigQuery Integration with GPT Assistant using Google Cloud Functions
+## BigQuery Data Retrieval and Integration with GPT Assistant using Google Cloud Functions
 
 ### Prerequisites
 - A Google Cloud Platform (GCP) account with a project set up.
