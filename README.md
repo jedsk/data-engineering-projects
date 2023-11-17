@@ -17,10 +17,10 @@ This repository contains a collection of data engineering projects, showcasing m
 
 
 
-### Project 2: BigQuery Data Retrieval and Integration with GPT Assistant using Google Cloud Functions
+### Project 2: [BigQuery Data Retrieval and Integration with GPT Assistant using Google Cloud Functions](https://github.com/jedsk/data-engineering-projects/blob/main/project2/instructions.md)
 
-- **Summary:**
-  - Demonstrates integrating Google BigQuery with a GPT Assistant using Google Cloud Functions. A Python function handles HTTP requests, interacts with BigQuery to fetch data, and returns results in CSV format.
+- **Summary**:
+  - This project showcases the integration of Google BigQuery with a GPT Assistant via Google Cloud Functions. A Python function is developed to handle HTTP requests, perform queries on BigQuery, and return the results in CSV format, focusing on digital marketing data analysis.
 - **Workflow:**
   1. Develops a Python function (bigquery_connection) using BigQuery client and Flask for handling HTTP requests.
   2. Function executes a SQL query in BigQuery, retrieving media spend and client interactions data.
