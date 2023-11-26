@@ -29,3 +29,16 @@ This repository contains a collection of data engineering projects, showcasing m
   5. Sets up an HTTP trigger for the function, making it accessible via a URL endpoint.
   6. Updates OpenAPI specifications of the GPT Assistant to include the Cloud Function's endpoint for seamless data integration.
   
+### Project 3: [Whisper API and NLP Analysis with OpenAI](https://github.com/jedsk/data-engineering-projects/blob/main/project3/instructions.md)
+
+- **Summary**:
+  - This project demonstrates the utilization of OpenAI's Whisper API for transcribing audio recordings, followed by a comprehensive NLP analysis using OpenAI's GPT model. It focuses on extracting and analyzing key information from call transcripts for insights into customer interactions.
+- **Workflow:**
+  1. Transcribes an audio file using Whisper API, selecting the appropriate model size based on accuracy and performance needs.
+  2. Processes the transcript with OpenAI's GPT model to extract critical details from the conversation, such as caller name, call type, urgency level, and customer sentiment.
+  3. Formats the analysis results and processes them into structured data, converting them into a CSV format for easier interpretation and further use.
+  4. Develops a comprehensive script combining the transcription and NLP analysis, ensuring seamless integration between different components.
+  5. Implements error handling and logging for robustness, especially in cases where the transcript details do not match the expected format.
+  6. Encapsulates the functionality in a user-friendly manner, allowing for easy replication or modification for different types of audio analysis tasks.
+- **Technologies Used:**
+  - Python, OpenAI's Whisper and GPT APIs, Pandas for data manipulation, and CSV for data export.
