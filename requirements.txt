@@ -1,0 +1,10 @@
+pandas
+gcsfs
+openai-whisper
+soundfile
+selenium
+google-auth
+google-cloud-secret-manager
+google-cloud-storage
+openai
+openpyxl     
