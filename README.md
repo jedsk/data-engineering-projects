@@ -29,16 +29,24 @@ This repository contains a collection of data engineering projects, showcasing m
   5. Sets up an HTTP trigger for the function, making it accessible via a URL endpoint.
   6. Updates OpenAPI specifications of the GPT Assistant to include the Cloud Function's endpoint for seamless data integration.
   
-### Project 3: [Whisper API and NLP Analysis with OpenAI](https://github.com/jedsk/data-engineering-projects/blob/main/project3/instructions.md)
+### Project 3: [Comprehensive Audio Analysis and NLP with OpenAI and GCP](https://github.com/jedsk/data-engineering-projects/blob/main/project3/instructions.md)
 
 - **Summary**:
-  - This project demonstrates the utilization of OpenAI's Whisper API for transcribing audio recordings, followed by a comprehensive NLP analysis using OpenAI's GPT model. It focuses on extracting and analyzing key information from call transcripts for insights into customer interactions.
+  - This advanced project integrates OpenAI's Whisper API for audio transcription and leverages GPT for a detailed Natural Language Processing (NLP) analysis. It automates the process of extracting and analyzing key information from customer call transcripts, offering insights into customer interactions, sentiment, and call details. The script also incorporates automated downloading and uploading of audio files and transcripts to and from Google Cloud Storage (GCS), providing a comprehensive solution for audio analysis and data processing.
 - **Workflow:**
-  1. Transcribes an audio file using Whisper API, selecting the appropriate model size based on accuracy and performance needs.
-  2. Processes the transcript with OpenAI's GPT model to extract critical details from the conversation, such as caller name, call type, urgency level, and customer sentiment.
-  3. Formats the analysis results and processes them into structured data, converting them into a CSV format for easier interpretation and further use.
-  4. Develops a comprehensive script combining the transcription and NLP analysis, ensuring seamless integration between different components.
-  5. Implements error handling and logging for robustness, especially in cases where the transcript details do not match the expected format.
-  6. Encapsulates the functionality in a user-friendly manner, allowing for easy replication or modification for different types of audio analysis tasks.
+  1. Automates credential fetching from GCP Secret Manager and logs into ServiceTitan.
+  2. Downloads reports and audio files from ServiceTitan and uploads them to Google Cloud Storage (GCS).
+  3. Uses OpenAI's Whisper API to transcribe audio files stored in GCS.
+  4. Processes transcriptions using OpenAI's GPT model to extract detailed information like caller name, call type, urgency level, and customer sentiment.
+  5. Formats analysis results and saves them as structured data in CSV format on GCS for easy interpretation and further use.
+  6. Combines downloading, transcribing, analyzing, and data management into a comprehensive script with robust error handling and logging.
+  7. Designs the script for easy replication or modification for various audio analysis tasks, ensuring user-friendly functionality.
+
 - **Technologies Used:**
-  - Python, OpenAI's Whisper and GPT APIs, Pandas for data manipulation, and CSV for data export.
+  - Python for overall scripting.
+  - OpenAI's Whisper and GPT APIs for audio transcription and NLP analysis.
+  - Google Cloud Platform services, including Secret Manager and Cloud Storage.
+  - Selenium WebDriver for automated web interactions.
+  - Pandas for data manipulation and analysis.
+  - GCSFS for interactions with Google Cloud Storage.
+  - CSV format for data export and manipulation.
