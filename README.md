@@ -20,12 +20,19 @@ This repository contains a collection of data engineering projects, showcasing m
 - **Technologies**: Python, Google BigQuery, Google Cloud Functions, Flask.
 
 ### [Project 3: Comprehensive Audio Analysis and NLP with OpenAI and GCP](https://github.com/jedsk/data-engineering-projects/blob/main/project3/main.py)
-- **Summary**: Utilizes OpenAI's Whisper API for audio transcription and GPT for NLP analysis.
-- **Workflow**:
-  - Fetches credentials and logs into services.
-  - Manages audio file download/upload with Google Cloud Storage.
-  - Performs NLP analysis using OpenAI's GPT model.
+- **Summary**: This project showcases the integration of OpenAI's Whisper API for audio transcription and GPT for detailed NLP analysis. It automates the extraction and analysis of key information from customer call transcripts, providing insights into customer interactions and sentiment.
+- **Key Features**:
+  - Credential management using GCP Secret Manager and automated login to ServiceTitan.
+  - Automated downloading and uploading of audio files and transcripts to/from Google Cloud Storage (GCS).
+  - Audio file transcription using OpenAI's Whisper API.
+  - Detailed NLP analysis of transcriptions using OpenAI's GPT model to extract caller details, call type, urgency, and customer sentiment.
+  - Formatting and saving analysis results in CSV format on GCS for easy interpretation and further use.
+  - Comprehensive scripting that includes robust error handling and user-friendly functionality.
 - **Deployment**:
-  - Containerizes and deploys the application to Google Cloud Run.
-  - Manages Docker images with Google Artifact Registry.
-- **Technologies**: Python, Docker, OpenAI APIs, GCP services (Secret Manager, Cloud Storage, Artifact Registry, Cloud Run), Selenium, Pandas, GCSFS.
+  - The application is containerized and deployed to Google Cloud Run, ensuring scalable and efficient execution.
+  - Docker is used for creating a container image of the application.
+  - The container image is stored and managed using Google Artifact Registry, providing a secure and private storage solution for Docker images.
+  - Deployment to Cloud Run is automated, allowing the application to be scaled up or down based on demand, and ensuring high availability.
+- **Technologies Used**:
+  - Python, OpenAI's Whisper and GPT APIs, Google Cloud Platform services (Secret Manager, Cloud Storage, Artifact Registry, and Cloud Run), Selenium WebDriver, Pandas, GCSFS, Docker.
+
