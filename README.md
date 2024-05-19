@@ -44,4 +44,4 @@ This repository contains a collection of data engineering projects, showcasing m
   - Continuous Logging and Data Collection: Logs interaction details and collects essential data such as date, time, caller name, phone number, and service requests.
   - Post-Call Data Processing: After the call, retrieves and processes conversation logs, extracting key data points for analysis and storage.
 - **Technologies Used**:
-  - Python, Flask, Twilio API, OpenAI API, Google Sheets API.
+  - Python, Flask, Twilio API, OpenAI API, Google Sheets API, ngrok (for testing).
