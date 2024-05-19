@@ -12,7 +12,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 load_dotenv()
 
 app = Flask(__name__)
-app.secret_key = 'something-in-the-water12423'  # Set a secret key for session handling
+app.secret_key = "your_flask_key"  # Set a secret key for session handling
 
 # Instantiate the OpenAI client with API key
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
@@ -75,9 +75,9 @@ def answer_call():
         # Retrieve the existing appointments from the Google Sheet
         try:
             scope = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
-            creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\Anyone\OneDrive\Desktop\python-twilio\credentials.json', scope)
+            creds = ServiceAccountCredentials.from_json_keyfile_name("path_to_your_credentials_directory", scope)
             sheets_client = gspread.authorize(creds)
-            sheet_url = 'https://docs.google.com/spreadsheets/d/1IwBNjCZ7xi2E8yZrSS0pQXfGepBLlzdt8h5JSIqsqR0/edit#gid=0'
+            sheet_url = "url_to_your_google_sheet"
             sheet = sheets_client.open_by_url(sheet_url).sheet1
 
             existing_appointments = get_existing_appointments(sheet)
@@ -167,7 +167,7 @@ def hangup():
 
     try:
         # Find the newest folder in the "conversations" directory
-        conversations_dir = "C:\\Users\\Anyone\\OneDrive\\Desktop\\python-twilio\\conversations"
+        conversations_dir = "path_to_your_conversations_directory"
         print(f"Looking for newest folder in: {conversations_dir}")
         
         folders = [f for f in os.listdir(conversations_dir) if os.path.isdir(os.path.join(conversations_dir, f))]
@@ -202,7 +202,7 @@ def hangup():
         - Date (format mm/dd/yyyy)
         - Time (format hh:mm AM/PM)
         - Name
-        - Phone Number (XXX) XXX-XXXX)
+        - Phone Number (XXX) XXX-XXXX
         - Stylist Requested
         - Service Requested
         """
@@ -234,9 +234,9 @@ def hangup():
         # Authenticate and access the Google Sheet
         try:
             scope = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
-            creds = ServiceAccountCredentials.from_json_keyfile_name(r'C:\Users\Anyone\OneDrive\Desktop\python-twilio\credentials.json', scope)
+            creds = ServiceAccountCredentials.from_json_keyfile_name("path_to_your_credentials_directory", scope)
             sheets_client = gspread.authorize(creds)
-            sheet_url = 'https://docs.google.com/spreadsheets/d/1IwBNjCZ7xi2E8yZrSS0pQXfGepBLlzdt8h5JSIqsqR0/edit#gid=0'
+            sheet_url = "url_to_your_google_sheet"
             sheet = sheets_client.open_by_url(sheet_url).sheet1
 
             # Append the data to the Google Sheet
