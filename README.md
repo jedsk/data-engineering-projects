@@ -36,3 +36,12 @@ This repository contains a collection of data engineering projects, showcasing m
 - **Technologies Used**:
   - Python, OpenAI's Whisper and GPT APIs, Google Cloud Platform services (Secret Manager, Cloud Storage, Artifact Registry, and Cloud Run), Selenium WebDriver, Pandas, GCSFS, Docker.
 
+### [Project 4: Twilio-Based Dynamic Call Handling System with GPT Integration](https://github.com/jedsk/data-engineering-projects/blob/main/project4/main.py)
+- **Summary**: This project develops a dynamic call handling system using Twilio and a Flask application. It leverages OpenAI's GPT model to interact dynamically with callers, logging and processing call data efficiently.
+- **Key Features**:
+  - Incoming Call Reception: Utilizes a Twilio phone number to receive calls, activating a Flask-hosted Python script upon call reception.
+  - Dynamic Interaction with GPT: Employs OpenAI's GPT model to generate real-time responses during calls, tailored to the caller’s input.
+  - Continuous Logging and Data Collection: Logs interaction details and collects essential data such as date, time, caller name, phone number, and service requests.
+  - Post-Call Data Processing: After the call, retrieves and processes conversation logs, extracting key data points for analysis and storage.
+- **Technologies Used**:
+  - Python, Flask, Twilio API, OpenAI API, Google Sheets API.
